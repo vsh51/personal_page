@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/******************/
+/* Navbar section */
+/******************/
+main {
+    /* generated gradient */
+    /* https://cssgradient.io/ */
+    background: rgb(63,94,251);
+    background: linear-gradient(315deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    
+    height: 100vh;
+}
+
+nav {
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+    padding-top: 12px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+
+    /* Blur an are behind the fixed navbar */
+    backdrop-filter: blur(10px);
+}
+
+nav ul{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    transition: 0.15s;
+    font-weight: 600;
+}
+
+nav ul li:hover a {
+    color: #3b3b3b;
+}
+
+/*******************/
+/* Profile section */
+/*******************/
+.profile {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.profile__wrapper {
+    display: grid;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.profile img {
+    width: 80%;
+    display: grid;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.profile__item {
+    padding: 5px 0 5px 0;
+}
+
+.profile__wrapper h1 {
+    font-size: 200%;
+}
+
+.profile__wrapper h2 {
+    font-size: 140%;
+}
+
+.profile__wrapper h3 {
+    font-size: 120%;
+}
+
+.profile__wrapper h4 {
+    font-size: 100%;
+}
+
+/**********************/
+/* Experience section */
+/**********************/
+.experience {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.experience__wrapper {
+    grid-row: 2;
+}
+
+.title {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2.5%;
+    padding-bottom: 5px;
+    z-index: 1;
+}
+
+.experience__title {
+    margin-bottom: 5%;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: #9037F0;
+    top: 120%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.experience__articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.experience__article {
+    padding: 8px 8px 8px 13px;
+    border-left: solid 3.5px #9037F0;
+    border-radius: 3px;
+}
+
+.article__title {
+    margin-bottom: 5px;
+}
+
+.article__period {
+    margin-bottom: 10px;
+}
+
+/*********************/
+/* Education section */
+/*********************/
+.education {
+    background-color: #9037F0;
+    padding-top: 1%;
+}
+
+.education__title {
+    margin-top: 5%;
+    color: white;
+}
+
+.education__title::after {
+    background-color: white;
+}
+
+.education__item {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.education__content {
+    min-height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.education__item {
+    font-size: 120%;
+    color: white;
+}
+
+#ed1 {
+    text-align: right;
+    grid-row: 2;
+    grid-column: 2;
+    border-right: solid 3px white;
+    margin-right: -1.5px;
+    padding-right: 25px;
+
+}
+
+#ed2 {
+    grid-row: 3;
+    grid-column: 3;
+    border-left: solid 3px white;
+    margin-left: -1.5px;
+    padding-left: 25px;
+}
+
+/************/
+/* Contacts */
+/************/
+.contacts__wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.contacts__title {
+    width: fit-content;
+    height: fit-content;
+    grid-column: 2;
+    grid-row: 6;    
+}
+
+.contacts__content {
+    grid-column: 2;
+    grid-row: 7;   
+    text-align: center;
+}
+
+.fa {
+    padding: 10px 0 10px 0;
+    margin-right: 10px;
+}
+
+.contacts__content a {
+    text-decoration: none;
+    color: black;
+}
