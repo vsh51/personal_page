@@ -207,6 +207,15 @@ nav ul li:hover a {
     border-right: solid 3px white;
     margin-right: -1.5px;
     padding-right: 25px;
+    position: relative;
+}
+
+#ed1::after {
+    content: "";
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
 
 }
 
@@ -216,6 +225,16 @@ nav ul li:hover a {
     border-left: solid 3px white;
     margin-left: -1.5px;
     padding-left: 25px;
+}
+
+#ed3 {
+    text-align: right;
+    grid-row: 4;
+    grid-column: 2;
+    border-right: solid 3px white;
+    margin-right: -1.5px;
+    padding-right: 25px;
+
 }
 
 /************/
@@ -305,13 +324,15 @@ nav ul li:hover a {
     background-color: #7d2cd4;
     height: 100vh;
     display: grid;
-    grid-template-rows: repeat(1fr, 6);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    color: white;
 }
 
 .fre_hours__title {
-    grid-row: 2;
+    grid-row: 3;
+    grid-column: 4;
     height: fit-content;
-    color: white;
 }
 
 .fre_hours__title::after {
@@ -319,10 +340,19 @@ nav ul li:hover a {
 }
 
 table {
-    grid-row: 3;
+    grid-row: 4;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    font-size: 120%;
+    margin-left: -3.3%;
 }
 
-td {
-    border-right: 1px solid;
-    border-left: 1px solid;
+th {
+    text-align: left;
+}
+
+table span {
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    padding: 0 5% 0 5%;
 }
