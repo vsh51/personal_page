@@ -301,6 +301,27 @@ nav ul li:hover a {
 /*********/
 /* Table */
 /*********/
+.free_hours__wrapper {
+    background-color: #7d2cd4;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(1fr, 6);
+}
+
+.fre_hours__title {
+    grid-row: 2;
+    height: fit-content;
+    color: white;
+}
+
+.fre_hours__title::after {
+    background-color: white;
+}
+
+table {
+    grid-row: 3;
+}
+
 td {
     border-right: 1px solid;
     border-left: 1px solid;
