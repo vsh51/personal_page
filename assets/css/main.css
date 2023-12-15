@@ -297,3 +297,10 @@ nav ul li:hover a {
 .contacts__form input:nth-child(5):hover {
     background-color: #7d2cd4;
 }
+
+/*********/
+/* Table */
+/*********/
+th, td {
+    border: 1px solid;
+}
