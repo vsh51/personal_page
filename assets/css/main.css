@@ -301,6 +301,7 @@ nav ul li:hover a {
 /*********/
 /* Table */
 /*********/
-tr {
-    border: 1px solid;
+td {
+    border-right: 1px solid;
+    border-left: 1px solid;
 }
