@@ -210,15 +210,6 @@ nav ul li:hover a {
     position: relative;
 }
 
-#ed1::after {
-    content: "";
-    width: 100px;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-
-}
-
 #ed2 {
     grid-row: 3;
     grid-column: 3;
